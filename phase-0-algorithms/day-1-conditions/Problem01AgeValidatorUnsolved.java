@@ -1,22 +1,22 @@
 public class Problem01AgeValidatorUnsolved {
-    public static void checkAge (int age) {
+    public static String classifyAge(int age) {
         if (age < 0) {
-            System.out.println("Invalid age");
+            return "Invalid age";
         } else if (age >= 65) {
-            System.out.println("Senior user");
+            return "Senior user";
         } else if (age >= 18) {
-            System.out.println("Adult user");
+            return "Adult user";
         } else {
-            System.out.println("Minor user");
+            return "Minor user";
         }
     }
 
     public static void main(String[] args) {
-        checkAge(-5); 
-        checkAge(0); 
-        checkAge(30);
-        checkAge(65);
-        checkAge(80); 
+        System.out.println(classifyAge(-5));
+        System.out.println(classifyAge(0));
+        System.out.println(classifyAge(30));
+        System.out.println(classifyAge(65));
+        System.out.println(classifyAge(80));
     }
 }
 
