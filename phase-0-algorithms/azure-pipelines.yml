@@ -16,4 +16,3 @@ steps:
     $files = Get-ChildItem -Recurse -Filter *.java phase-0-algorithms
     javac $files
   displayName: 'Compile Java (Phase 0)'
-'
