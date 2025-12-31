@@ -13,20 +13,22 @@ Build a solid programming and problem-solving foundation using Java 21, focusing
 These concepts form the foundation of backend systems in regulated environments such as banking and financial services.
 
 ## 📁 Repository Structure
+```
 java-backend-zero-to-hero/
 └── phase-0-algorithms/
-├── day-1-conditions/
-│ ├── README.md
-│ ├── Problem01AgeValidatorSolved.java
-│ ├── Problem01AgeValidatorUnsolved.java
-│ ├── Problem03DiscountCalculatorSolved.java
-│ └── Problem04ConditionalRulesUnsolved.java
-│
-└── day-2-control-flow/
-├── README.md
-├── Problem02MenuSolved.java
-├── Problem02MenuUnsolved.java
-├── Problem03DiscountCalculatorUnsolved.java
-├── Problem04UserListUnsolved.java
-├── Problem05OddCounterUnsolved.java
-└── Problem06DayOfWeekUnsolved.java
+    ├── day-1-conditions/
+    │   ├── README.md
+    │   ├── Problem01AgeValidatorSolved.java
+    │   ├── Problem01AgeValidatorUnsolved.java
+    │   ├── Problem03DiscountCalculatorSolved.java
+    │   └── Problem04ConditionalRulesUnsolved.java
+    │
+    └── day-2-control-flow/
+        ├── README.md
+        ├── Problem02MenuSolved.java
+        ├── Problem02MenuUnsolved.java
+        ├── Problem03DiscountCalculatorUnsolved.java
+        ├── Problem04UserListUnsolved.java
+        ├── Problem05OddCounterUnsolved.java
+        └── Problem06DayOfWeekUnsolved.java
+```
