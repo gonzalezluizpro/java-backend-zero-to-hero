@@ -12,6 +12,15 @@ Build a solid programming and problem-solving foundation using Java 21, focusing
 ## Why This Matters
 These concepts form the foundation of backend systems in regulated environments such as banking and financial services.
 
+## CI/CD
+
+This project uses **Azure DevOps Pipelines** integrated with **GitHub**.
+
+Pipeline responsibilities in Phase 0:
+- Compile Java code
+- Ensure code integrity on every commit
+- Prepare the project for enterprise-grade CI/CD in later phases
+
 ## 📁 Repository Structure
 ```
 java-backend-zero-to-hero/
