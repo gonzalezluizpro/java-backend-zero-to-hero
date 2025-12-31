@@ -8,13 +8,9 @@ pool:
   name: 'SelfHostedPool'
 
 steps:
-- task: JavaToolInstaller@0
-  inputs:
-    versionSpec: '21'
-    jdkArchitectureOption: 'x64'
-    jdkSourceOption: 'PreInstalled'
-
 - script: |
+    echo "Java version:"
+    java -version
     echo "Compiling Java source files..."
     javac phase-0-algorithms/**/*.java
   displayName: 'Compile Java (Phase 0)'
