@@ -11,8 +11,16 @@ steps:
 - powershell: |
     Write-Host "Java version:"
     java -version
-    Write-Host "Compiling Java source files..."
 
-    $files = Get-ChildItem -Recurse -Filter *.java phase-0-algorithms
-    javac $files
+    Write-Host "Searching for Java source files..."
+    $files = Get-ChildItem -Path phase-0-algorithms -Recurse -Filter *.java
+
+    if ($files.Count -eq 0) {
+        Write-Error "No Java files found"
+        exit 1
+    }
+
+    Write-Host "Compiling Java source files..."
+    $filePaths = $files | ForEach-Object { $_.FullName }
+    javac $filePaths
   displayName: 'Compile Java (Phase 0)'
