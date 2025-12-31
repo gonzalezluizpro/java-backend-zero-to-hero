@@ -8,9 +8,12 @@ pool:
   name: 'SelfHostedPool'
 
 steps:
-- script: |
-    echo "Java version:"
+- powershell: |
+    Write-Host "Java version:"
     java -version
-    echo "Compiling Java source files..."
-    javac phase-0-algorithms/**/*.java
+    Write-Host "Compiling Java source files..."
+
+    $files = Get-ChildItem -Recurse -Filter *.java phase-0-algorithms
+    javac $files
   displayName: 'Compile Java (Phase 0)'
+'
